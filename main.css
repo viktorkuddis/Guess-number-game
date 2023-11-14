@@ -37,6 +37,7 @@ button {
     border-style: none;
     border-radius: 0.5rem;
     cursor: pointer;
+    font-size: inherit;
 }
 
 
@@ -52,6 +53,7 @@ input {
     padding: 0.5rem 1rem;
     border: 1px solid var(--textcolor1);
     border-radius: 0.5rem;
+    font-size: inherit;
 }
 
 [disabled] {
