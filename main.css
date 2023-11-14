@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --textcolor1: rgb(39, 39, 39);
+    --textcolor2: whitesmoke;
+    --textAccentColor: var(var(--secondarycolor));
+
+    --maincolor: #91c7b1;
+    --secondarycolor: #b33951;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--textcolor1);
+    background-color: var(--maincolor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input_section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--secondarycolor);
+    color: var(--textcolor2);
+    padding: 0.5rem 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+#restartBtn {
+    background-color: #91c7b1;
+    display: inline;
+    width: max-content;
+    margin-left: auto;
+    margin-top: 1rem;
+}
+
+input {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--textcolor1);
+    border-radius: 0.5rem;
+}
+
+[disabled] {
+    background-color: #55555555;
+    border: none;
+    cursor: not-allowed;
+}
+
+main {
+    background-color: whitesmoke;
+    border-radius: 0.5rem;
+    width: 66%;
+    min-width: 320px;
+    max-width: 600px;
+
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#messageContainer {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: larger;
+    /* display none, inledningsvis */
+    display: none;
+}
+
+#messageContainer_p2 {
+    color: red;
+}
+
+#guessingHistory {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#guessingHistory>div {
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 0.3rem;
+    margin-top: 0.3rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#guessingHistory>div>div {
+    width: 33%;
+    text-align: center;
+
+}
+
+
+.toLow {
+    background-color: lightblue;
+}
+
+.toHigh {
+    background-color: pink;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+#game-over-stamp {
+    color: #b33951;
+    border: 3px #b33951 dashed;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+}
+
+#remaining-guesses_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#remaining-guesses_p {
+    background-color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--secondarycolor);
+
+}
