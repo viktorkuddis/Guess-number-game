@@ -123,6 +123,7 @@ function GameON() {
         if (remainingGuesses <= 0) {
             messageContainer.appendChild(document.createElement('div')).textContent = "GAME OVER";
             messageContainer.lastChild.id = "game-over-stamp"
+            messageContainer.appendChild(document.createElement('p')).textContent = `Rätt svar var : ${FacitTal} !`
         }
         //skapar en div som blir nytt historyItem
         const historyitem = document.createElement('div');

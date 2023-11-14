@@ -128,7 +128,7 @@ main {
     border: 3px #b33951 dashed;
     display: inline-block;
     padding: 0.5rem 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 #remaining-guesses_container {
