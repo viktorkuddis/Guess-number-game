@@ -120,7 +120,7 @@ function GameON() {
             numberInputBtn.setAttribute('disabled', '');
         }
 
-        if (remainingGuesses <= 0) {
+        if (remainingGuesses <= 0 && correctAnswer == false) {
             messageContainer.appendChild(document.createElement('div')).textContent = "GAME OVER";
             messageContainer.lastChild.id = "game-over-stamp"
             messageContainer.appendChild(document.createElement('p')).textContent = `Rätt svar var : ${FacitTal} !`
